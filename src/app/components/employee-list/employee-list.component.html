@@ -1,0 +1,14 @@
+<div>
+  <h2>Employee List</h2>
+  <ul>
+    <li *ngFor="let employee of employees">
+      <div *ngIf="employee">
+        <h2>{{ employee?.firstName }} {{ employee?.lastName }}'s Details</h2>
+        <div><b>Email:</b> {{ employee?.email }}</div>
+        <div><b>Gender:</b> {{ employee?.gender }}</div>
+        <div><b>Salary:</b> ${{ employee?.salary }}</div>
+      </div>
+  
+    </li>
+  </ul>
+</div>
