@@ -3,10 +3,13 @@
   <ul>
     <li *ngFor="let employee of employees">
       <div *ngIf="employee">
-        <h2>{{ employee?.firstName }} {{ employee?.lastName }}'s Details</h2>
+        <div><b>Id:</b> {{ employee?.id }}</div>
+        <div><b>First Name:</b> {{ employee?.firstName }}</div>
+        <div><b>Last Name:</b> {{ employee?.lastName }}</div>
         <div><b>Email:</b> {{ employee?.email }}</div>
         <div><b>Gender:</b> {{ employee?.gender }}</div>
         <div><b>Salary:</b> ${{ employee?.salary }}</div>
+        <br />
       </div>
   
     </li>
