@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule
-import { RouterLink, RouterModule } from '@angular/router'; // Import RouterModule for routerLink
-import { EmployeeService } from '../../services/employee.service'; // Adjust path as necessary
-import { Employee } from '../../models/employee.model'; // Adjust path as necessary
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterModule } from '@angular/router';
+import { EmployeeService } from '../../services/employee.service'; 
+import { Employee } from '../../models/employee.model';
 
 @Component({
   selector: 'app-employee-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, RouterLink], // Include CommonModule and RouterModule here
+  imports: [CommonModule, RouterModule, RouterLink],
   templateUrl: './employee-list.component.html',
-  providers: [EmployeeService] // Provide the EmployeeService
+  providers: [EmployeeService]
 })
 export class EmployeeListComponent implements OnInit {
   employees: Employee[] = [];

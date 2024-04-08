@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Employee } from '../models/employee.model';
+import { Employee } from '../models/employee.model'; 
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
-  private apiUrl = 'https://100876273-comp-3133-assignment1.vercel.app/';
+  private apiUrl = 'https://100876273-comp-3133-assignment1.vercel.app//graphql';
 
   constructor(private http: HttpClient) {}
 
